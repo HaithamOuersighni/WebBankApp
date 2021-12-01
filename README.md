@@ -13,7 +13,7 @@ mdp : root
 Création de la table users :
 
 
-CREATE TABLE users ( id INT PRIMARY KEY NOT NULL auto_increment=1001, nom VARCHAR(100), prenom VARCHAR(100),email VARCHAR(255), admin boolean not null default 0);
+CREATE TABLE users ( id INT PRIMARY KEY NOT NULL auto_increment=1001, nom VARCHAR(100) not null, prenom VARCHAR(100) not null,email VARCHAR(255) not null, password VARCHAR(255) not null, admin boolean not null default 0);
 
 alter table users add constraint mail_unique UNIQUE (email);
   
