@@ -132,3 +132,20 @@ function onGithubErrorLogin(error) {
 
 const googleButton = document.getElementById('google-login-button');
 googleButton.onclick = googleLogin;
+
+document.getElementById("login-button").onclick = isConnected;
+document.getElementById("loggout-button").onclick = isNotConnected;
+
+function isConnected(){
+    document.getElementById("login-button-container").style.display = "none";
+    document.getElementById("not-logged-tag").style.display = "none";
+    document.getElementById("logout-button-container").style.display = "inline-flex";
+    document.getElementById("logged-tag").style.display = "inline-flex";
+}
+
+function isNotConnected(){
+    document.getElementById("login-button-container").style.display = "inline-flex";
+    document.getElementById("not-logged-tag").style.display = "inline-flex";
+    document.getElementById("logout-button-container").style.display = "none";
+    document.getElementById("logged-tag").style.display = "none";
+}

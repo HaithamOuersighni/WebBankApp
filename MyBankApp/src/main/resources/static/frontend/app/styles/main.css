@@ -3,3 +3,11 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #333;
 }
+
+#logout-button-container{
+    display : none;
+}
+
+#logged-tag{
+    display: none;
+}
