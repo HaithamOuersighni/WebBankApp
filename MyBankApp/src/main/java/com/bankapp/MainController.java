@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class MainController{
 
     @GetMapping(value="/login")
-    public String showHomePage(){
-        return "index";
+    public String showLoginPage(){
+        return "login";
     }
 }

@@ -9,13 +9,36 @@ import java.util.Optional;
 @Service
 public class UserService {
     @Autowired private UserRepository repo;
+    @Autowired private AccountRepository arepo;
 
-    public List<User> listAll(){
+    public List<User> listAllUser(){
         return (List<User>) repo.findAll();
+    }
+    public List<Account> listAllAccount(){
+        return (List<Account>) arepo.findAll();
     }
 
     public void save(User user) {
+        Account account = new Account();
+        account.setIdUser(user.getId());
+        account.setDepot(getDepot());
+        account.setRetrait(getRetrait());
         repo.save(user);
+        arepo.save(account);
+        account.toString();
+    }
+    public Integer getDepot(){
+        for(Account a : listAllAccount()){
+            return a.getDepot();
+        }
+        return 100;
+    }
+
+    public Integer getRetrait(){
+        for(Account a : listAllAccount()){
+            return a.getRetrait();
+        }
+        return 100;
     }
 
     public User get(Integer id) throws UserNotFoundException {

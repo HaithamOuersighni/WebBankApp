@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http//www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" th:href="@{webjars/bootstrap/css/bootstrap.min.css}"/>
-    <title>Add new user</title>
+    <link rel="stylesheet" type="text/css" th:href="@{styles/user_form.css}"/>
+    <title>[[${pageTitle}]]</title>
 </head>
 <body>
     <div class="container-fluid text-center">
         <div class="text-center">
-            <h2>Add New User</h2>
+            <h2 class="new_user_title">[[${pageTitle}]]</h2>
         </div>
-        <form th:action="@{/users/save}" method="post" th:object="${user}" style="max-width: 500px; margin:0 auto;">
+        <form class="new_user_form" th:action="@{/users/save}" method="post" th:object="${user}" style="max-width: 500px; margin:0 auto;">
+            <input type="hidden" th:field="*{id}">
             <div class="border border-secondary rounded p-3">
                 <div class="form-group row">
                     <label class="col-sm-4 col-form-label">E-mail</label>
@@ -43,15 +45,15 @@
                     </div>
                 </div>
                 <div class="text-center">
-                    <button type="submit" class="btn btn-primary m-2">Save</button>
-                    <button type="button" class="btn btn-secondary m-2" onclick="cancelForm()">Cancel</button>
+                    <button type="new_user_btn submit" class="btn btn-primary m-2">Save</button>
+                    <button type="new_user_btn button" class="btn btn-secondary m-2" onclick="cancelForm()">Cancel</button>
                 </div>
             </div>
         </form>
     </div>
 <script type="text/javascript">
     function cancelForm(){
-        window.location = "[[@{/users}]]";
+        window.location = "[[@{/login}]]";
     }
 </script>
 </body>

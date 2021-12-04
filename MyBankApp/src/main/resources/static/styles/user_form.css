@@ -1,0 +1,10 @@
+.new_user_form,.new_user_title{
+    text-align:center;
+}
+
+.new_user_btn{
+    width: 150px;
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+}

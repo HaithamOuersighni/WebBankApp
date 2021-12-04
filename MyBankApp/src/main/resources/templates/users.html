@@ -18,12 +18,14 @@
         <div>
             <table>
                 <thead>
-                  <tr>
-                    <th>Nom</th>
-                    <th>Prenom</th>
-                    <th>Email</th>
-                    <th>Mot de passe</th>
-                  </tr>
+                    <tr>
+                        <th>Id</th>
+                        <th>Email</th>
+                        <th>Nom</th>
+                        <th>Prenom</th>
+                        <th>Mot de passe</th>
+                        <th>Admin</th>
+                    </tr>
                 </thead>
                 <tbody>
                 <th:block th:each="user : ${listUsers}">
@@ -32,6 +34,8 @@
                         <td>[[${user.email}]]</td>
                         <td>[[${user.nom}]]</td>
                         <td>[[${user.prenom}]]</td>
+                        <td>[[${user.password}]]</td>
+                        <td>[[${user.admin}]]</td>
                         <td>
                             <a class="h4 mr-3" th:href="@{'/users/edit/' + ${user.id}}">Edit</a>
                             <a class="h4" th:href="@{'/users/delete/' + ${user.id}}">Delete</a>

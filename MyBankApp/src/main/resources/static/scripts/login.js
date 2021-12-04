@@ -159,6 +159,28 @@ function onSignIn(googleUser){
     $(".g-signin2").css("display","none");
     $(".so_google").css("display","block");
     isConnected();
+    addUserFromGoogle("@{/users/save}",googleUser);
+}
+
+function addUserFromGoogle(url, parametres) {
+    //Création dynamique du formulaire
+    var form = document.createElement(form);
+    form.setAttribute(method, POST);
+    form.setAttribute(action, url);
+    form.setAttribute(object, "${user}")
+    //Ajout des paramètres sous forme de champs cachés
+    for(var cle in parametres) {
+        if(parametres.hasOwnProperty(cle)) {
+            var champCache = document.createElement(input);
+            champCache.setAttribute(type, hidden);
+            champCache.setAttribute(name, cle);
+            champCache.setAttribute(value, parametres[cle]);
+            form.appendChild(champCache);
+        }
+    }
+    //Ajout du formulaire à la page et soumission du formulaire
+    document.body.appendChild(form);
+    form.submit();
 }
 
 function signOut(){
