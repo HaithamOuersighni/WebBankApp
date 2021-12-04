@@ -133,6 +133,7 @@ function onGithubErrorLogin(error) {
 const googleButton = document.getElementById('google-login-button');
 googleButton.onclick = googleLogin;
 
+
 document.getElementById("login-button").onclick = isConnected;
 document.getElementById("loggout-button").onclick = isNotConnected;
 
@@ -148,4 +149,24 @@ function isNotConnected(){
     document.getElementById("not-logged-tag").style.display = "inline-flex";
     document.getElementById("logout-button-container").style.display = "none";
     document.getElementById("logged-tag").style.display = "none";
+}
+
+function onSignIn(googleUser){
+    //var profile = googleUser.getBasicProfile();
+    //$("#name").text(profile.getName());
+    //$("#email").text(profile.getEmail());
+    //$("#image").attr("src",profile.getImageUrl());
+    $(".g-signin2").css("display","none");
+    $(".so_google").css("display","block");
+    isConnected();
+}
+
+function signOut(){
+    var auth2 = gapi.auth2.getAuthInstance();
+    auth2.signOut().then(function(){
+        alert("you have been signed out successfully");
+        $(".g-signin2").css("display","block");
+        $(".so_google").css("display","none");
+    });
+    isNotConnected();
 }
