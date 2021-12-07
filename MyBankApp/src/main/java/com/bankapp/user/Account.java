@@ -11,7 +11,6 @@ public class Account {
     @Column(nullable = false,unique = true)
     private Integer idUser;
 
-    @Column(columnDefinition = "Integer default 5000")
     private Integer value;
 
     @Column(columnDefinition = "Integer default 0")

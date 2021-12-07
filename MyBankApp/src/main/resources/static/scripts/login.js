@@ -134,53 +134,55 @@ const googleButton = document.getElementById('google-login-button');
 googleButton.onclick = googleLogin;
 
 
-document.getElementById("login-button").onclick = isConnected;
-document.getElementById("loggout-button").onclick = isNotConnected;
-
-function isConnected(){
-    document.getElementById("login-button-container").style.display = "none";
-    document.getElementById("not-logged-tag").style.display = "none";
-    document.getElementById("logout-button-container").style.display = "inline-flex";
-    document.getElementById("logged-tag").style.display = "inline-flex";
-}
-
-function isNotConnected(){
-    document.getElementById("login-button-container").style.display = "inline-flex";
-    document.getElementById("not-logged-tag").style.display = "inline-flex";
-    document.getElementById("logout-button-container").style.display = "none";
-    document.getElementById("logged-tag").style.display = "none";
-}
-
 function onSignIn(googleUser){
-    //var profile = googleUser.getBasicProfile();
-    //$("#name").text(profile.getName());
-    //$("#email").text(profile.getEmail());
-    //$("#image").attr("src",profile.getImageUrl());
     $(".g-signin2").css("display","none");
     $(".so_google").css("display","block");
-    isConnected();
-    addUserFromGoogle("@{/users/save}",googleUser);
+    addUserFromGoogle(googleUser);
 }
 
-function addUserFromGoogle(url, parametres) {
+function addUserFromGoogle(parametres) {
     //Création dynamique du formulaire
-    var form = document.createElement(form);
-    form.setAttribute(method, POST);
-    form.setAttribute(action, url);
-    form.setAttribute(object, "${user}")
-    //Ajout des paramètres sous forme de champs cachés
-    for(var cle in parametres) {
-        if(parametres.hasOwnProperty(cle)) {
-            var champCache = document.createElement(input);
-            champCache.setAttribute(type, hidden);
-            champCache.setAttribute(name, cle);
-            champCache.setAttribute(value, parametres[cle]);
-            form.appendChild(champCache);
-        }
-    }
-    //Ajout du formulaire à la page et soumission du formulaire
+    var profile = parametres.getBasicProfile();
+
+    //definition des attributs du formulaire
+    var form = document.createElement("form");
+    form.setAttribute('method', 'post');
+    form.setAttribute('action', "/users/save");
+    form.setAttribute('th:object', "${user}");
+    form.setAttribute('id','addGoogleAccount');
+
+    //Ajout des paramètres
+    var nom = document.createElement("input");
+    nom.setAttribute('th:field', '*{nom}');
+    nom.setAttribute('type', 'text');
+    nom.setAttribute('value', profile.getName().toString());
+    form.appendChild(nom);
+    var prenom = document.createElement("input");
+    prenom.setAttribute('th:field', '*{prenom}');
+    prenom.setAttribute('type', 'text');
+    prenom.setAttribute('value', profile.getName().toString());
+    form.appendChild(prenom);
+    var email = document.createElement("input");
+    email.setAttribute('th:field', '*{email}');
+    email.setAttribute('type', 'email');
+    email.setAttribute('value', profile.getEmail().toString());
+    form.appendChild(email);
+    var admin = document.createElement("input");
+    admin.setAttribute('th:field', '*{admin}');
+    admin.setAttribute('type', 'checkbox');
+    admin.setAttribute('value', 'false');
+    form.appendChild(admin);
+    var password = document.createElement("input");
+    password.setAttribute('th:field', '*{password}');
+    password.setAttribute('type', 'password');
+    password.setAttribute('value', 'xxxxxxxxx');
+    form.appendChild(password);
+
+    //Ajout du formulaire à la page et soumission de celui-ci
+//    form.style.display = 'none';
     document.body.appendChild(form);
-    form.submit();
+    console.log(document.getElementById("addGoogleAccount"));
+    //document.getElementById("addGoogleAccount").submit();
 }
 
 function signOut(){
@@ -190,5 +192,4 @@ function signOut(){
         $(".g-signin2").css("display","block");
         $(".so_google").css("display","none");
     });
-    isNotConnected();
 }

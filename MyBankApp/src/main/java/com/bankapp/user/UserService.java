@@ -20,12 +20,12 @@ public class UserService {
 
     public void save(User user) {
         Account account = new Account();
-        account.setIdUser(user.getId());
+        repo.save(user);
+        account.setIdUser(listAllUser().get(listAllUser().size()-1).getId());
         account.setDepot(getDepot());
         account.setRetrait(getRetrait());
-        repo.save(user);
+        account.setValue(5000);
         arepo.save(account);
-        account.toString();
     }
     public Integer getDepot(){
         for(Account a : listAllAccount()){

@@ -28,6 +28,17 @@ public class User {
     @Column(length=45,nullable = false,name="nom")
     private String nom;
 
+    @Column(nullable = false)
+    private String type;
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
     public Integer getId(){
 	    return id;
     }
@@ -83,6 +94,7 @@ public class User {
                 ", admin=" + admin +
                 ", prenom='" + prenom + '\'' +
                 ", nom='" + nom + '\'' +
+                ", type='" + type + '\'' +
                 '}';
     }
 }
