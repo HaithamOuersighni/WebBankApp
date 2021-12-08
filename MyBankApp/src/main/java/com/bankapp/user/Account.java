@@ -22,6 +22,9 @@ public class Account {
     @Column(nullable = false)
     private Integer retrait;
 
+    @Column(nullable = false)
+    private boolean admin;
+
     public Integer getId() {
         return id;
     }
@@ -70,6 +73,14 @@ public class Account {
         this.retrait = retrait;
     }
 
+    public boolean getAdmin() {
+        return admin;
+    }
+
+    public void setAdmin(boolean admin) {
+        this.admin = admin;
+    }
+
     @Override
     public String toString() {
         return "Account{" +
@@ -79,6 +90,7 @@ public class Account {
                 ", decouvert=" + decouvert +
                 ", depot=" + depot +
                 ", retrait=" + retrait +
+                ", admin=" + admin +
                 '}';
     }
 }

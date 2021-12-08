@@ -77,7 +77,7 @@ public class User {
 	    this.nom=nom;
     }
 
-    public boolean isAdmin(){
+    public boolean getAdmin(){
 	    return admin;
     }
 

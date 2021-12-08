@@ -34,6 +34,7 @@ public class UserService {
         account.setDepot(getDepot());
         account.setRetrait(getRetrait());
         account.setValue(5000);
+        account.setAdmin(listAllUser().get(listAllUser().size()-1).getAdmin());
         arepo.save(account);
 
         Connected co = new Connected();
@@ -91,6 +92,7 @@ public class UserService {
         account.setDepot(getDepot());
         account.setRetrait(getRetrait());
         account.setValue(5000);
+        account.setAdmin(listAllUser().get(listAllUser().size()-1).getAdmin());
         arepo.save(account);
 
         Connected co = new Connected();
@@ -116,5 +118,26 @@ public class UserService {
             }
         }
         return false;
+    }
+
+    public Account getConnected() {
+        int id = listAllConnected().get(0).getId();
+        for(Account a : listAllAccount()){
+            if(a.getIdUser().equals(id)){
+                return a;
+            }
+        }
+        return null;
+    }
+
+    public void addMoney() {
+        Account a = getConnected();
+        a.setValue(a.getValue()+a.getDepot());
+        a.getValue()
+    }
+
+    public void subMoney() {
+        Account a = getConnected();
+        a.setValue(a.getValue()-a.getDepot());
     }
 }

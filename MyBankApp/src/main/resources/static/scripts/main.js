@@ -25,11 +25,38 @@ function populateWebpageWithData(
 }
 
 function getUser(){
-
+    $.ajax({
+        type: "GET",
+        url: "/getAccount",
+        dataType: "JSON",
+        success: function(data){
+            console.log(data);
+        },
+    });
 }
 
 window.addEventListener("load", (_) => init());
 function init() {
   initWebPageWithData();
-  getUser();
+//  getUser();
+}
+
+
+function withdraw(){
+    console.log("test");
+    $.ajax({
+        type: "POST",
+        url: "/subMoney",
+    });
+//    getUser();
+}
+
+
+
+function deposit(){
+    $.ajax({
+        type: "POST",
+        url: "/addMoney",
+    });
+//    getUser();
 }

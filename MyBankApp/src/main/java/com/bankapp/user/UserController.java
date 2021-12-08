@@ -96,7 +96,6 @@ public class UserController {
 
     @PostMapping("/users/connect")
     public String connectedUser(User user, RedirectAttributes ra){
-        System.out.println(user.toString());
         if(service.connect(user)){
             System.out.println("utilisateur connecter");
             return "redirect:/index";
@@ -104,5 +103,23 @@ public class UserController {
         System.out.println("utilisateur non connecter");
         ra.addFlashAttribute("message","Username or password is wrong, please retry");
         return "redirect:/login";
+    }
+
+    @GetMapping("/getAccount")
+    public Account getAccount(){
+        System.out.println("element envoyer : "+service.getConnected());
+        return service.getConnected();
+    }
+
+    @PostMapping("/addMoney")
+    public String addMoney(){
+        service.addMoney();
+        return "index";
+    }
+
+    @PostMapping("/subMoney")
+    public String subMoney(){
+        service.subMoney();
+        return "index";
     }
 }
