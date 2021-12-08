@@ -80,6 +80,7 @@ public class UserService {
                 System.out.println("User Already exist");
                 Connected co = new Connected();
                 co.setEmail(u.getEmail());
+                co.setId(u.getId());
                 crepo.save(co);
                 return;
             }
