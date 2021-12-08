@@ -133,11 +133,16 @@ public class UserService {
     public void addMoney() {
         Account a = getConnected();
         a.setValue(a.getValue()+a.getDepot());
-        a.getValue()
+        arepo.deleteById(a.getId());
+        arepo.save(a);
+        System.out.println(a.getValue());
     }
 
     public void subMoney() {
         Account a = getConnected();
         a.setValue(a.getValue()-a.getDepot());
+        arepo.deleteById(a.getId());
+        arepo.save(a);
+        System.out.println(a.getValue());
     }
 }
