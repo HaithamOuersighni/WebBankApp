@@ -13,8 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class MainController{
 
     @GetMapping(value="/login")
-    public String showLoginPage(Model model){
-        model.addAttribute("user", new User());
+    public String showLoginPage(){
         return "login";
     }
 }

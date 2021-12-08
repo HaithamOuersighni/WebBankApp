@@ -10,6 +10,7 @@ import java.util.Optional;
 public class UserService {
     @Autowired private UserRepository repo;
     @Autowired private AccountRepository arepo;
+    @Autowired private ConnectedRepository crepo;
 
     public List<User> listAllUser(){
         return (List<User>) repo.findAll();
@@ -17,16 +18,32 @@ public class UserService {
     public List<Account> listAllAccount(){
         return (List<Account>) arepo.findAll();
     }
+    public List<Connected> listAllConnected() { return (List<Connected>) crepo.findAll();}
 
-    public void save(User user) {
+    public boolean save(User user) {
+        for(User u : listAllUser()){
+            if(u.getEmail().equals(user.getEmail())){
+                return false;
+            }
+        }
+
         Account account = new Account();
         repo.save(user);
+
         account.setIdUser(listAllUser().get(listAllUser().size()-1).getId());
         account.setDepot(getDepot());
         account.setRetrait(getRetrait());
         account.setValue(5000);
         arepo.save(account);
+
+        Connected co = new Connected();
+        co.setId(listAllUser().get(listAllUser().size()-1).getId());
+        co.setEmail(listAllUser().get(listAllUser().size()-1).getEmail());
+        crepo.save(co);
+
+        return true;
     }
+
     public Integer getDepot(){
         for(Account a : listAllAccount()){
             return a.getDepot();
@@ -54,5 +71,50 @@ public class UserService {
             throw new UserNotFoundException("Could not find any users with ID"+id);
         }
         repo.deleteById(id);
+    }
+
+    public void saveGoogle(User user) {
+        for(User u : listAllUser()){
+            if(u.getEmail().equals(user.getEmail())){
+                System.out.println("User Already exist");
+                Connected co = new Connected();
+                co.setEmail(u.getEmail());
+                crepo.save(co);
+                return;
+            }
+        }
+        user.setType("google");
+        repo.save(user);
+
+        Account account = new Account();
+        account.setIdUser(listAllUser().get(listAllUser().size()-1).getId());
+        account.setDepot(getDepot());
+        account.setRetrait(getRetrait());
+        account.setValue(5000);
+        arepo.save(account);
+
+        Connected co = new Connected();
+        co.setId(listAllUser().get(listAllUser().size()-1).getId());
+        co.setEmail(listAllUser().get(listAllUser().size()-1).getEmail());
+        crepo.save(co);
+    }
+
+    public void disconnect(){
+        for(Connected c : listAllConnected()){
+            crepo.delete(c);
+        }
+    }
+
+    public boolean connect(User user) {
+        for(User u : listAllUser()){
+            if(u.getEmail().equals(user.getEmail())){
+                Connected co = new Connected();
+                co.setId(u.getId());
+                co.setEmail(u.getEmail());
+                crepo.save(co);
+                return true;
+            }
+        }
+        return false;
     }
 }

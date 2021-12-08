@@ -16,6 +16,7 @@ public class UserController {
     public String showHomePage(Model model){
         return "index";
     }
+
     @GetMapping("/users")
     public String showUserList(Model model){
         List<User> listUsers=service.listAllUser();
@@ -25,16 +26,29 @@ public class UserController {
 
     @GetMapping("/users/new")
     public String showNewForm(Model model){
-        model.addAttribute("user", new User());
-        model.addAttribute("pageTitle","Add New User");
         return "user_form";
     }
 
+    @GetMapping("/user/logGit")
+    public String showLogGit(Model model){
+        return "login_git";
+    }
+
     @PostMapping("/users/save")
-    public String saveUser(@ModelAttribute User user, RedirectAttributes ra){
-        System.out.println(user);
-        service.save(user);
-        ra.addFlashAttribute("message","The user has been saved successfully");
+    public String saveUser(User user, RedirectAttributes ra){
+        if(service.save(user)){
+            ra.addFlashAttribute("message","The user has been saved successfully");
+            return "redirect:/index";
+        }
+        else{
+            ra.addFlashAttribute("message","this email was already used");
+            return "user_form";
+        }
+    }
+
+    @PostMapping("/users/save/google")
+    public String saveUserGoogle(User u) {
+        service.saveGoogle(u);
         return "redirect:/index";
     }
 
@@ -68,5 +82,27 @@ public class UserController {
 
         }
         return "redirect:/users";
+    }
+
+    @DeleteMapping("/users/disconnect")
+    public void disconnectUser() {
+        service.disconnect();
+    }
+
+    @GetMapping("/users/logBank")
+    public String connectUser(Model model){
+        return "connect_form";
+    }
+
+    @PostMapping("/users/connect")
+    public String connectedUser(User user, RedirectAttributes ra){
+        System.out.println(user.toString());
+        if(service.connect(user)){
+            System.out.println("utilisateur connecter");
+            return "redirect:/index";
+        }
+        System.out.println("utilisateur non connecter");
+        ra.addFlashAttribute("message","Username or password is wrong, please retry");
+        return "redirect:/login";
     }
 }

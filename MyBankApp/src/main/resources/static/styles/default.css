@@ -49,3 +49,11 @@ ul{
     margin-left: 0 !important;
     list-style: none !important;
 }
+
+.disconnect{
+    background-color: red;
+    border: 1px solid black;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+}

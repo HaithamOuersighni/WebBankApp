@@ -34,10 +34,10 @@
                 <button class="button btn-microsoft">Microsoft login</button>
             </div>
             <div class="div-login">
-                <button class="button btn-github">Github login</button>
+                <button class="button btn-github"><a th:href="@{/user/logGit}">Github login</a></button>
             </div>
             <div class="div-login">
-                <button class="button btn-login">Bank login</button>
+                <button class="button btn-login"><a th:href="@{/users/logBank}">Bank login</a></button>
             </div>
             <div class="div-login">
                 <button class="button btn-login"><a th:href="@{/users/new}">Create account</a></button>
@@ -79,18 +79,20 @@
 
         </div>
     </div>
+    <!-- Ajax -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <!-- font awesome -->
     <script type="text/javascript"
             src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"></script>
+    <!-- Google login -->
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Personal scripts -->
     <script type="text/javascript" src="scripts/data.js"></script>
     <script type="text/javascript" src="scripts/login.js"></script>
     <script type="text/javascript" src="scripts/main.js"></script>
-    <!-- Google login -->
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-            crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </body>
 </html>
