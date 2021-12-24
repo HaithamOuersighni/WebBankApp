@@ -13,7 +13,7 @@ public class Account {
 
     private Integer value;
 
-    @Column(columnDefinition = "Integer default 0")
+
     private Integer decouvert;
 
     @Column(nullable = false)

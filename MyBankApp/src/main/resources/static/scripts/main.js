@@ -1,62 +1,41 @@
-function initWebPageWithData() {
-  const path = '../data/banque_postale.json';
-  fetch(path)
-    .then((response) => response.json())
-    .then((data) =>
-      populateWebpageWithData(
-        data.name,
-        data.description,
-        data.phoneNumber,
-        data.mail
-      )
-    );
-}
-
-function populateWebpageWithData(
-  bankName,
-  bankDescription,
-  bankPhone,
-  bankMail
-) {
-  $('#bankNameContainer').html(bankName);
-  $('#bankDescriptionContainer').html(bankDescription);
-  $('#phoneNumberContainer').html(bankPhone);
-  $('#mailContainer').html(bankMail);
-}
-
 function getUser(){
     $.ajax({
         type: "GET",
         url: "/getAccount",
         dataType: "JSON",
         success: function(data){
-            console.log(data);
+            document.getElementById("accountId").innerHTML = data.idUser;
+            document.getElementById("accountBalance").innerHTML = data.value;
+            if(data.admin){
+                $("#admin_manage").css("display","block");
+            }
         },
     });
 }
 
-window.addEventListener("load", (_) => init());
-function init() {
-  initWebPageWithData();
-//  getUser();
-}
+window.onload = function(){
+    getUser();
+};
 
 
 function withdraw(){
-    console.log("test");
     $.ajax({
-        type: "POST",
+        type: "POST", // A Voir pour changer en get afin de modifier la disponibilités du comptes.
         url: "/subMoney",
+        success: function(){
+            getUser();
+        },
     });
-//    getUser();
 }
 
 
 
 function deposit(){
     $.ajax({
-        type: "POST",
+        type: "POST", // A Voir pour changer en get afin de modifier la disponibilités du comptes.
         url: "/addMoney",
+        success: function(){
+            getUser();
+        },
     });
-//    getUser();
 }

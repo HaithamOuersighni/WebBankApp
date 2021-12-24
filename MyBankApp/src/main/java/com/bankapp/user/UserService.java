@@ -31,10 +31,16 @@ public class UserService {
         repo.save(user);
 
         account.setIdUser(listAllUser().get(listAllUser().size()-1).getId());
+        if(listAllUser().get(listAllUser().size()-1).getAdmin()){
+            account.setDecouvert(-2000);
+            account.setAdmin(true);
+        }else{
+            account.setDecouvert(0);
+            account.setAdmin(false);
+        }
         account.setDepot(getDepot());
         account.setRetrait(getRetrait());
         account.setValue(5000);
-        account.setAdmin(listAllUser().get(listAllUser().size()-1).getAdmin());
         arepo.save(account);
 
         Connected co = new Connected();
@@ -90,10 +96,16 @@ public class UserService {
 
         Account account = new Account();
         account.setIdUser(listAllUser().get(listAllUser().size()-1).getId());
+        if(listAllUser().get(listAllUser().size()-1).getAdmin()){
+            account.setDecouvert(-2000);
+            account.setAdmin(true);
+        }else{
+            account.setDecouvert(0);
+            account.setAdmin(false);
+        }
         account.setDepot(getDepot());
         account.setRetrait(getRetrait());
         account.setValue(5000);
-        account.setAdmin(listAllUser().get(listAllUser().size()-1).getAdmin());
         arepo.save(account);
 
         Connected co = new Connected();
@@ -136,14 +148,18 @@ public class UserService {
         a.setValue(a.getValue()+a.getDepot());
         arepo.deleteById(a.getId());
         arepo.save(a);
-        System.out.println(a.getValue());
     }
 
-    public void subMoney() {
+    public boolean subMoney() {
         Account a = getConnected();
-        a.setValue(a.getValue()-a.getDepot());
-        arepo.deleteById(a.getId());
-        arepo.save(a);
-        System.out.println(a.getValue());
+        if(a.getDecouvert()<=a.getValue()-a.getDepot()){
+            System.out.println(a.getDecouvert());
+            System.out.println(a.getValue()-a.getDepot());
+            a.setValue(a.getValue()-a.getDepot());
+            arepo.deleteById(a.getId());
+            arepo.save(a);
+            return true;
+        }
+        return false;
     }
 }

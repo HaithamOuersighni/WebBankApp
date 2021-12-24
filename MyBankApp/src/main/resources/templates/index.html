@@ -13,14 +13,15 @@
   <link rel="stylesheet" type="text/css" th:href="@{webjars/bootstrap/css/bootstrap.min.css}"/>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css" />
   <link rel="stylesheet" type="text/css" th:href="@{styles/default.css}" />
-  <link rel="stylesheet" type="text/css" th:href="@{styles/banque_postale.css}" />
+<!--  <link rel="stylesheet" type="text/css" th:href="@{styles/banque_postale.css}" />-->
+  <link rel="stylesheet" type="text/css" th:href="@{styles/societe_generale.css}" />
   <title>Bank Web Application</title>
 </head>
 
 <body class="container" style="margin-top: 5%">
   <!-- Columns for login functions -->
-  <div align="center">
-    <h2 id="admin_manage" style="display:none"><a th:href="@{/users}">Manage users</a></h2>
+  <div align="center" id="admin_manage" style="display:none">
+    <a class="manage_user button secondary-color" th:href="@{/users}">Manage users</a>
   </div>
 
   <div class="column" style="text-align: right">
@@ -47,7 +48,7 @@
                   - "./images/bank_icons/societe_generale.png"
                   ./images/bank_icons/banque_postale.png ./images/bank_icons/cic.png ./images/bank_icons/societe_generale.png
                 -->
-              <img src="images/bank_icons/banque_postale.png" alt="Image" />
+              <img src="images/bank_icons/societe_generale.png" alt="Image" />
             </figure>
           </div>
           <div class="media-content">
@@ -64,8 +65,8 @@
       </div>
     </div>
     <div class="column is-4 is-offset-1">
-<!--      <iframe title="Converter" src="https://xeconvert.com/widget1?from=usd&to=eur&lang=&theme=blue&font=12"-->
-<!--        width="100%" height="100%"></iframe>-->
+      <iframe title="Converter" src="https://xeconvert.com/widget1?from=usd&to=eur&lang=&theme=blue&font=12"
+        width="100%" height="100%"></iframe>
     </div>
     <!-- Column that contains the Account box-->
   </div>
@@ -79,10 +80,6 @@
         </span>
         <span>Withdraw</span>
       </button>
-      <!--<label class="checkbox">
-          <input id="limit-checkbox" type="checkbox" onchange="limitationChanged(this)">
-          With limitation
-        </label>-->
     </div>
     <div class="column" style="text-align: end">
       <button id="deposit-button" onclick="deposit()" class="button secondary-color">
@@ -132,6 +129,7 @@
           src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"></script>
   <!-- Personal scripts -->
   <script type="text/javascript" src="scripts/login.js"></script>
+  <script type="text/javascript" src="scripts/data.js"></script>
   <script type="text/javascript" src="scripts/main.js"></script>
   <!-- Google login -->
   <script src="https://apis.google.com/js/platform.js" async defer></script>

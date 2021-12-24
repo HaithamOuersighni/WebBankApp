@@ -15,8 +15,8 @@
         <div th:if="${message}" class="alert alert-success text-center">
             [[${message}]]
         </div>
-        <div>
-            <table>
+        <div style="margin: 100px 0">
+            <table style="width:100%">
                 <thead>
                     <tr>
                         <th>Id</th>
@@ -44,6 +44,9 @@
                 </th:block>
                 </tbody>
             </table>
+        </div>
+        <div>
+            <a class="h3" th:href="@{'/index'}">Return to home page</a>
         </div>
     </div>
 </body>
