@@ -164,7 +164,7 @@
             "type": "Resource feature",
             "parent": "c1c47565-382d-4698-b747-3d5c4972513f",
             "parentRelation": "Normal",
-            "presence": "Optional",
+            "presence": "Mandatory",
             "lgFile": "",
             "role": "",
             "hexColor": "#6ead82",
