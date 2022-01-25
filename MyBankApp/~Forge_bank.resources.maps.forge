@@ -1,4 +1,64 @@
 {
-    "rangeSeeds": [],
+    "rangeSeeds": [
+        {
+            "file": "src/main/resources/templates/index.html",
+            "seeds": [
+                {
+                    "id": "e35fb0a0-913c-4d7a-87b7-a0484e94b4a6",
+                    "analyzer": "Resource Analyzer",
+                    "featureKey": "0ac894cc-3f15-4930-870a-b887bfe90354",
+                    "startLine": 13,
+                    "startColumn": 52,
+                    "endLine": 13,
+                    "endColumn": 79,
+                    "type": "Deletion",
+                    "isValidated": true
+                },
+                {
+                    "id": "7040156a-333f-4990-be45-49768ca5333b",
+                    "analyzer": "Resource Analyzer",
+                    "featureKey": "867ea46b-7acc-467e-9612-9166ceb1dab9",
+                    "startLine": 47,
+                    "startColumn": 24,
+                    "endLine": 47,
+                    "endColumn": 62,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "src/main/resources/static/scripts/data.js",
+            "seeds": [
+                {
+                    "id": "baa7c192-8f1e-4674-80d5-50eecd78e245",
+                    "analyzer": "Resource Analyzer",
+                    "featureKey": "496eb63e-7d54-43b9-af6d-a6262a849d13",
+                    "startLine": 2,
+                    "startColumn": 16,
+                    "endLine": 2,
+                    "endColumn": 45,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "src/main/resources/templates/login.html",
+            "seeds": [
+                {
+                    "id": "1bb2e405-165d-4637-9187-6091a005fb26",
+                    "analyzer": "Resource Analyzer",
+                    "featureKey": "0ac894cc-3f15-4930-870a-b887bfe90354",
+                    "startLine": 15,
+                    "startColumn": 54,
+                    "endLine": 15,
+                    "endColumn": 81,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        }
+    ],
     "fileSeeds": []
 }

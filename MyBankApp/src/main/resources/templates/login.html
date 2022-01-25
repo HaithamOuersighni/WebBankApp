@@ -13,9 +13,7 @@
     <link rel="stylesheet" type="text/css" th:href="@{webjars/bootstrap/css/bootstrap.min.css}"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css" />
     <link rel="stylesheet" type="text/css" th:href="@{styles/default.css}" />
-    <!--<link rel="stylesheet" type="text/css" th:href="@{styles/cic.css}" />-->
     <link rel="stylesheet" type="text/css" th:href="@{styles/societe_generale.css}" />
-    <!--<link rel="stylesheet" type="text/css" th:href="@{styles/banque_postale.css}" />-->
     <link rel="stylesheet" type="text/css" th:href="@{styles/login.css}" />
     <title>Bank Login</title>
 </head>
@@ -28,7 +26,7 @@
                 <h2 class="subtitle secondary-color-text" id="bankDescriptionContainer"></h2>
             </div>
             <div class="div-login">
-                <div class="g-signin2" data-onsuccess="onSignIn"></div>
+                <div class="g-signin2" onclick="ClickLogin()" data-onsuccess="onSignIn"></div>
             </div>
             <div class="div-login">
                 <button class="button btn-microsoft">Microsoft login</button>

@@ -31,6 +31,7 @@ function withdraw(){
 
 
 function deposit(){
+
     $.ajax({
         type: "POST", // A Voir pour changer en get afin de modifier la disponibilités du comptes.
         url: "/addMoney",

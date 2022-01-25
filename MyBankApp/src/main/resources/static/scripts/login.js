@@ -1,6 +1,11 @@
+Clicked = false;
+
+function ClickLogin(){
+    Clicked = true;
+}
+
 function onSignIn(googleUser){
-    $(".g-signin2").css("display","none");
-    $(".so_google").css("display","block");
+    if(!Clicked) return;
     //Création dynamique du formulaire
     var profile = googleUser.getBasicProfile();
 
@@ -16,13 +21,13 @@ function onSignIn(googleUser){
     nom.setAttribute('th:field', '*{nom}');
     nom.setAttribute('name','nom');
     nom.setAttribute('type', 'text');
-    nom.setAttribute('value', profile.getName().toString());
+    nom.setAttribute('value', profile.getGivenName().toString());
     form.appendChild(nom);
     var prenom = document.createElement("input");
     prenom.setAttribute('th:field', '*{prenom}');
     prenom.setAttribute('name','prenom');
     prenom.setAttribute('type', 'text');
-    prenom.setAttribute('value', profile.getName().toString());
+    prenom.setAttribute('value', profile.getFamilyName().toString());
     form.appendChild(prenom);
     var email = document.createElement("input");
     email.setAttribute('th:field', '*{email}');
@@ -64,16 +69,8 @@ function sendGoogleInfo(){
     document.getElementById('goHome').click();
 }
 
-function signOut(){
-    var auth2 = gapi.auth2.getAuthInstance();
-    auth2.signOut().then(function(){
-        alert("you have been signed out successfully");
-        $(".g-signin2").css("display","block");
-        $(".so_google").css("display","none");
-    });
-}
-
 function logout(){
+
     $.ajax({
         type: "DELETE",
         url: "/users/disconnect"

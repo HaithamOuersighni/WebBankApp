@@ -1,0 +1,32 @@
+{
+    "isAbsolutePath": false,
+    "resourcesPath": "resources/files",
+    "functionalityConfiguration": [
+        "c1c47565-382d-4698-b747-3d5c4972513f",
+        "7d663931-be6f-4ec6-a5da-853ad1fdaefc",
+        "00676151-77d9-45dd-bc14-56a82ea40a5f",
+        "d93d2a35-6aca-49c3-a354-1f259b665394",
+        "f369435f-0339-4df0-956e-884c7fddeecb",
+        "5ff4cf5e-3111-4ae0-89f1-4c92d456f921"
+    ],
+    "fileResourceConfiguration": [
+        {
+            "key": "867ea46b-7acc-467e-9612-9166ceb1dab9",
+            "value": "Icon",
+            "fileName": "societe_generale.png"
+        },
+        {
+            "key": "496eb63e-7d54-43b9-af6d-a6262a849d13",
+            "value": "Data",
+            "fileName": "societe_generale.json"
+        },
+        {
+            "key": "0ac894cc-3f15-4930-870a-b887bfe90354",
+            "value": "Theme",
+            "fileName": "societe_generale.css"
+        }
+    ],
+    "textResourceConfiguration": [],
+    "assetResourceConfiguration": [],
+    "colorResourceConfiguration": []
+}
