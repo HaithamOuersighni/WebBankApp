@@ -39,14 +39,11 @@ public class ViewController {
     }
 
     @PostMapping("/users/connect")
-    public String connectedUser(User user, RedirectAttributes ra){
+    public String connectedUser(User user){
         if(service.connect(user)){
-            System.out.println("utilisateur connecter");
             return "redirect:/index";
         }
-        System.out.println("utilisateur non connecter");
-        ra.addFlashAttribute("message","Username or password is wrong, please retry");
-        return "redirect:/login";
+        return "connect_form";
     }
 
     @PostMapping("/users/save")

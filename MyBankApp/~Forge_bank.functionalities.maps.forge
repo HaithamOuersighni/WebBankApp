@@ -194,12 +194,12 @@
                     "isValidated": true
                 },
                 {
-                    "id": "6ac5afa8-cc03-4c94-9cdb-e5cec2b22693",
+                    "id": "f19761d3-7f4b-4a30-a5de-8e95d752ae7a",
                     "analyzer": "Interoperable analyzer",
                     "featureKey": "5ff4cf5e-3111-4ae0-89f1-4c92d456f921",
                     "startLine": 40,
                     "startColumn": 4,
-                    "endLine": 61,
+                    "endLine": 58,
                     "endColumn": 5,
                     "type": "Deletion",
                     "isValidated": true
@@ -208,9 +208,9 @@
                     "id": "637bca62-167b-4770-b3dd-3869d1ce3961",
                     "analyzer": "Interoperable analyzer",
                     "featureKey": "f369435f-0339-4df0-956e-884c7fddeecb",
-                    "startLine": 63,
+                    "startLine": 60,
                     "startColumn": 4,
-                    "endLine": 67,
+                    "endLine": 64,
                     "endColumn": 5,
                     "type": "Deletion",
                     "isValidated": true
@@ -219,20 +219,20 @@
                     "id": "eaf26ed6-7364-4a7c-880c-17c51b2abeb1",
                     "analyzer": "Interoperable analyzer",
                     "featureKey": "eca4e1fa-ad94-481e-87fd-263f8d11b761",
-                    "startLine": 69,
+                    "startLine": 66,
                     "startColumn": 4,
-                    "endLine": 80,
+                    "endLine": 77,
                     "endColumn": 5,
                     "type": "Deletion",
                     "isValidated": true
                 },
                 {
-                    "id": "a67036f9-5ef6-48ec-8755-a53d24af7272",
+                    "id": "1644d523-d997-40e4-a5b3-901f6ca7efc7",
                     "analyzer": "Interoperable analyzer",
                     "featureKey": "eca4e1fa-ad94-481e-87fd-263f8d11b761",
-                    "startLine": 82,
+                    "startLine": 79,
                     "startColumn": 4,
-                    "endLine": 92,
+                    "endLine": 89,
                     "endColumn": 5,
                     "type": "Deletion",
                     "isValidated": true
@@ -396,11 +396,11 @@
                     "isValidated": true
                 },
                 {
-                    "id": "44b6371c-ca5f-4cf3-92a4-7b239dbdd847",
+                    "id": "445b6e2b-d69f-43d3-817e-87efa8f6c259",
                     "analyzer": "Interoperable analyzer",
                     "featureKey": "5ff4cf5e-3111-4ae0-89f1-4c92d456f921",
                     "startLine": 122,
-                    "startColumn": 4,
+                    "startColumn": 0,
                     "endLine": 133,
                     "endColumn": 5,
                     "type": "Deletion",

@@ -122,7 +122,7 @@ public class UserService {
 
     public boolean connect(User user) {
         for(User u : listAllUser()){
-            if(u.getEmail().equals(user.getEmail())){
+            if(u.getEmail().equals(user.getEmail()) && u.getPassword().equals(user.getPassword())){
                 Connected co = new Connected();
                 co.setId(u.getId());
                 co.setEmail(u.getEmail());
