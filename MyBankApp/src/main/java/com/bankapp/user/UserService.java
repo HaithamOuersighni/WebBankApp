@@ -135,7 +135,9 @@ public class UserService {
 
     public Account getConnected() {
         int id = listAllConnected().get(0).getId();
+        System.out.println("id = "+id+" ahahahahahahahahahaha");
         for(Account a : listAllAccount()){
+            System.out.println("reussi : "+ a.getIdUser());
             if(a.getIdUser().equals(id)){
                 return a;
             }
@@ -159,5 +161,20 @@ public class UserService {
             return true;
         }
         return false;
+    }
+
+    public void transfer(Account a){
+        Account connected = getConnected();
+        if(connected.getValue()>a.getValue()){
+            for(Account b : listAllAccount()){
+                if(b.getIdUser()==a.getIdUser()){
+                    b.setValue(b.getValue()+a.getValue());
+                    connected.setValue(connected.getValue()-a.getValue());
+                    arepo.deleteById(b.getId());
+                    arepo.save(b);
+                    return;
+                }
+            }
+        }
     }
 }

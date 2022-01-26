@@ -26,23 +26,34 @@
                     "isValidated": true
                 },
                 {
-                    "id": "13465b52-a49d-4f7d-b1fd-637266e60d8c",
+                    "id": "dcb228e0-66ff-49f2-ab66-dec409cecf77",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "b2459b48-cc93-4296-8bbf-af2e255c058f",
+                    "startLine": 70,
+                    "startColumn": 2,
+                    "endLine": 84,
+                    "endColumn": 8,
+                    "type": "Deletion",
+                    "isValidated": true
+                },
+                {
+                    "id": "ca08c6bd-feb8-493f-9be7-6dcdd30f0c37",
                     "analyzer": "Interoperable analyzer",
                     "featureKey": "32cc264a-0764-4d63-8499-f9b5d9b158c9",
-                    "startLine": 109,
-                    "startColumn": 0,
-                    "endLine": 113,
+                    "startLine": 125,
+                    "startColumn": 8,
+                    "endLine": 129,
                     "endColumn": 14,
                     "type": "Deletion",
                     "isValidated": true
                 },
                 {
-                    "id": "5b1d913d-728c-4f85-b502-b3131d457ec0",
+                    "id": "ae8604e3-437e-4fd0-9e64-1da41498d0c9",
                     "analyzer": "Interoperable analyzer",
                     "featureKey": "d93d2a35-6aca-49c3-a354-1f259b665394",
-                    "startLine": 114,
-                    "startColumn": 0,
-                    "endLine": 118,
+                    "startLine": 130,
+                    "startColumn": 8,
+                    "endLine": 134,
                     "endColumn": 14,
                     "type": "Deletion",
                     "isValidated": true
@@ -236,6 +247,17 @@
                     "endColumn": 5,
                     "type": "Deletion",
                     "isValidated": true
+                },
+                {
+                    "id": "d9f8f64c-6425-4377-b746-a6cc4b0a9968",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "b2459b48-cc93-4296-8bbf-af2e255c058f",
+                    "startLine": 91,
+                    "startColumn": 4,
+                    "endLine": 95,
+                    "endColumn": 5,
+                    "type": "Deletion",
+                    "isValidated": true
                 }
             ]
         },
@@ -410,9 +432,9 @@
                     "id": "b99ca63e-8a18-48d9-9a41-f6c2c67c9416",
                     "analyzer": "Interoperable analyzer",
                     "featureKey": "6e001a82-829a-42fc-9299-c7ab1d251e58",
-                    "startLine": 154,
+                    "startLine": 156,
                     "startColumn": 0,
-                    "endLine": 154,
+                    "endLine": 156,
                     "endColumn": 56,
                     "type": "Deletion",
                     "isValidated": true
@@ -421,10 +443,21 @@
                     "id": "627e560d-fc13-4552-99d4-283737d45ecb",
                     "analyzer": "Interoperable analyzer",
                     "featureKey": "6e001a82-829a-42fc-9299-c7ab1d251e58",
-                    "startLine": 159,
+                    "startLine": 161,
                     "startColumn": 0,
-                    "endLine": 160,
+                    "endLine": 162,
                     "endColumn": 21,
+                    "type": "Deletion",
+                    "isValidated": true
+                },
+                {
+                    "id": "8b03b5dd-5514-42b2-8396-a605114cd5f8",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "b2459b48-cc93-4296-8bbf-af2e255c058f",
+                    "startLine": 165,
+                    "startColumn": 4,
+                    "endLine": 178,
+                    "endColumn": 5,
                     "type": "Deletion",
                     "isValidated": true
                 }
@@ -434,7 +467,7 @@
             "file": "src/main/resources/static/scripts/main.js",
             "seeds": [
                 {
-                    "id": "d45ab6a3-8ce7-47a5-b9a6-85f925fe0e05",
+                    "id": "dc38e567-c738-4453-adb4-491c176a4484",
                     "analyzer": "Interoperable analyzer",
                     "featureKey": "eca4e1fa-ad94-481e-87fd-263f8d11b761",
                     "startLine": 8,
@@ -461,12 +494,12 @@
                     "isValidated": true
                 },
                 {
-                    "id": "b917495e-b897-4455-a143-bec350cf9c59",
+                    "id": "c3eb77a8-5bc7-4dfd-bed6-6f052d7fd378",
                     "analyzer": "Interoperable analyzer",
                     "featureKey": "eca4e1fa-ad94-481e-87fd-263f8d11b761",
-                    "startLine": 32,
-                    "startColumn": 4,
-                    "endLine": 37,
+                    "startLine": 37,
+                    "startColumn": 0,
+                    "endLine": 42,
                     "endColumn": 28,
                     "type": "Deletion",
                     "isValidated": true
@@ -484,6 +517,22 @@
                     "startColumn": 8,
                     "endLine": 26,
                     "endColumn": 29,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "src/main/resources/static/styles/default.css",
+            "seeds": [
+                {
+                    "id": "41e0235f-5f37-4947-8f6e-24c9c04a7658",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "b2459b48-cc93-4296-8bbf-af2e255c058f",
+                    "startLine": 70,
+                    "startColumn": 0,
+                    "endLine": 79,
+                    "endColumn": 1,
                     "type": "Deletion",
                     "isValidated": true
                 }

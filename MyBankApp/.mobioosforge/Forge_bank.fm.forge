@@ -60,9 +60,9 @@
                     "selector": "markerColorRect"
                 }
             ],
-            "id": "0dcecd70-4aac-4555-8227-88adbbbd16cf",
+            "id": "4319ac2d-366b-4a80-9d37-3853410f6d6e",
             "position": {
-                "x": 955,
+                "x": 1070,
                 "y": 50
             },
             "attrs": {
@@ -216,7 +216,7 @@
                     "selector": "markerColorRect"
                 }
             ],
-            "id": "a4516706-4b3d-4510-874b-42e835b83517",
+            "id": "5434b82e-4d6b-45b1-afd7-6a5930cb0b7b",
             "position": {
                 "x": 150,
                 "y": 151
@@ -371,7 +371,7 @@
                     "selector": "markerColorRect"
                 }
             ],
-            "id": "60c15f87-3024-4dcf-9d48-294343882cc1",
+            "id": "a2fa943f-49eb-4b39-a8b5-e6e5773c458a",
             "position": {
                 "x": 380,
                 "y": 151
@@ -526,7 +526,7 @@
                     "selector": "markerColorRect"
                 }
             ],
-            "id": "4aacf12b-8277-4e13-949a-5b50bf1279f1",
+            "id": "6f07ceed-bd94-42eb-9e07-de1e9c1c2362",
             "position": {
                 "x": 610,
                 "y": 151
@@ -680,7 +680,7 @@
                     "selector": "markerColorRect"
                 }
             ],
-            "id": "788c911b-0b5c-4b1f-a48b-3b3e9a5e49b0",
+            "id": "8d7ba588-624d-46c0-b684-d2bc020c30af",
             "position": {
                 "x": 840,
                 "y": 151
@@ -834,7 +834,7 @@
                     "selector": "markerColorRect"
                 }
             ],
-            "id": "0f837cee-67d7-4769-9c66-35c547cdd8a0",
+            "id": "58c9113c-9f35-4671-8b69-b707ee7aabfd",
             "position": {
                 "x": 495,
                 "y": 252
@@ -988,7 +988,7 @@
                     "selector": "markerColorRect"
                 }
             ],
-            "id": "cacdfdb7-9f24-49ba-88bc-7714774732d2",
+            "id": "48d9c3df-63cb-4432-93d9-de8e9281ac1c",
             "position": {
                 "x": 725,
                 "y": 252
@@ -1142,7 +1142,7 @@
                     "selector": "markerColorRect"
                 }
             ],
-            "id": "626b4c37-7ae5-4896-8450-3e2843a37e42",
+            "id": "dbde8f49-71bd-4f55-8422-2baaf83e5cac",
             "position": {
                 "x": 955,
                 "y": 252
@@ -1296,7 +1296,7 @@
                     "selector": "markerColorRect"
                 }
             ],
-            "id": "53ec9b5a-7f58-4654-a8ae-856303753aa0",
+            "id": "10b15625-5f1d-4a01-b817-d64d2e64db60",
             "position": {
                 "x": 1185,
                 "y": 252
@@ -1450,7 +1450,7 @@
                     "selector": "markerColorRect"
                 }
             ],
-            "id": "0f651f91-0bf9-45b6-8cc6-7077d190bb4f",
+            "id": "b704561f-37ba-4dd1-b2c4-19187a431f8d",
             "position": {
                 "x": 1070,
                 "y": 151
@@ -1604,7 +1604,7 @@
                     "selector": "markerColorRect"
                 }
             ],
-            "id": "6599f7ac-923e-4704-8ffc-11a792cd52bf",
+            "id": "5d3d9e26-d8db-4fba-bce1-26ab48e63dcf",
             "position": {
                 "x": 1300,
                 "y": 151
@@ -1700,6 +1700,160 @@
         {
             "type": "app.FeatureShapeModel",
             "feature": {
+                "key": "00676151-77d9-45dd-bc14-56a82ea40a5f",
+                "name": "Consortium",
+                "type": "Functionality feature",
+                "parent": "c1c47565-382d-4698-b747-3d5c4972513f",
+                "parentRelation": "Normal",
+                "presence": "Optional",
+                "lgFile": "",
+                "role": "",
+                "hexColor": "#2b8b01",
+                "help": "",
+                "nodeWeight": -1,
+                "nodeType": "feature",
+                "referenceType": "not a reference",
+                "fullName": "Consortium"
+            },
+            "size": {
+                "width": 180,
+                "height": 51
+            },
+            "hidden": false,
+            "markup": [
+                {
+                    "tagName": "rect",
+                    "selector": "body"
+                },
+                {
+                    "tagName": "rect",
+                    "selector": "header"
+                },
+                {
+                    "tagName": "text",
+                    "selector": "headerText"
+                },
+                {
+                    "tagName": "text",
+                    "selector": "bodyText"
+                },
+                {
+                    "tagName": "path",
+                    "selector": "relationType"
+                },
+                {
+                    "tagName": "path",
+                    "selector": "deadFeature"
+                },
+                {
+                    "tagName": "path",
+                    "selector": "commonFeature"
+                },
+                {
+                    "tagName": "path",
+                    "selector": "falseOptionalFeature"
+                },
+                {
+                    "tagName": "circle",
+                    "selector": "markerColorRect"
+                }
+            ],
+            "id": "8e977295-6729-4fb2-9d00-1a518efe8d9e",
+            "position": {
+                "x": 1530,
+                "y": 151
+            },
+            "attrs": {
+                "body": {
+                    "refWidth": "100%",
+                    "refHeight": "100%",
+                    "strokeWidth": 1,
+                    "fill": "#FFFFFF",
+                    "stroke": "#adc949",
+                    "style": {
+                        "transition": "0.3s ease-in-out"
+                    },
+                    "rx": 8,
+                    "ry": 8
+                },
+                "header": {
+                    "refWidth": "100%",
+                    "height": 0,
+                    "stroke": "#adc949",
+                    "strokeWidth": 0,
+                    "fill": "#adc949"
+                },
+                "headerText": {
+                    "text": ""
+                },
+                "bodyText": {
+                    "text": "Consortium",
+                    "refX": "50%",
+                    "refY": "50%",
+                    "textWrap": {
+                        "ellipsis": true,
+                        "width": -10
+                    },
+                    "textVerticalAnchor": "middle",
+                    "textAnchor": "middle",
+                    "fontSize": 14,
+                    "fontWeight": 700,
+                    "fontFamily": "Inter"
+                },
+                "relationType": {
+                    "refX": "50%",
+                    "refY": "100%",
+                    "stroke": "#A0A0A0",
+                    "strokeWidth": 1,
+                    "fill": "#FFFFFF",
+                    "strokeLinejoin": "round",
+                    "d": "M 0 0 l -10 10 q 10 10 20 0 z",
+                    "height": 20,
+                    "width": 30,
+                    "display": "block"
+                },
+                "deadFeature": {
+                    "refX": "68%",
+                    "refY": "65%",
+                    "fill": "#E63757",
+                    "d": "M 9.426 4.974 a 0.6 0.6 90 0 0 -0.852 0 L 7.2 6.354 L 5.826 4.974 A 0.6 0.6 90 0 0 4.974 5.826 L 6.354 7.2 l -1.38 1.374 a 0.6 0.6 90 0 0 0 0.852 a 0.6 0.6 90 0 0 0.852 0 L 7.2 8.046 l 1.374 1.38 a 0.6 0.6 90 0 0 0.852 0 a 0.6 0.6 90 0 0 0 -0.852 L 8.046 7.2 l 1.38 -1.374 A 0.6 0.6 90 0 0 9.426 4.974 Z m 2.016 -2.016 A 6 6 90 1 0 2.958 11.442 A 6 6 90 1 0 11.442 2.958 Z M 10.596 10.596 A 4.8 4.8 90 1 1 12 7.2 A 4.77 4.77 90 0 1 10.596 10.596 Z",
+                    "title": "Dead Feature",
+                    "cursor": "pointer",
+                    "display": "none"
+                },
+                "commonFeature": {
+                    "refX": "88%",
+                    "refY": "65%",
+                    "fill": "#0d6efd",
+                    "strokeLinejoin": "round",
+                    "d": "M 6.912 1.152 A 5.76 5.76 90 1 0 12.672 6.912 A 5.7664 5.7664 90 0 0 6.912 1.152 Z m 0 10.368 a 4.608 4.608 90 1 1 4.608 -4.608 A 4.6133 4.6133 90 0 1 6.912 11.52 Z m 0 -4.896 a 0.576 0.576 90 0 0 -0.576 0.576 v 1.728 a 0.576 0.576 90 0 0 1.152 0 v -1.728 A 0.576 0.576 90 0 0 6.912 6.624 Z m 0 -2.304 a 0.72 0.72 90 1 0 0.72 0.72 A 0.72 0.72 90 0 0 6.912 4.32 Z",
+                    "title": "Common Feature",
+                    "cursor": "pointer",
+                    "display": "none"
+                },
+                "falseOptionalFeature": {
+                    "refX": "78%",
+                    "refY": "65%",
+                    "fill": "#CA9704",
+                    "d": "M 7.2 9.6 a 0.6 0.6 90 1 0 0.6 0.6 A 0.6 0.6 90 0 0 7.2 9.6 Z m 6.402 0.882 l -4.83 -8.4 a 1.8 1.8 90 0 0 -3.144 0 l -4.8 8.4 A 1.8 1.8 90 0 0 2.364 13.2 H 12.036 a 1.8 1.8 90 0 0 1.566 -2.718 Z m -1.038 1.2 a 0.6 0.6 90 0 1 -0.528 0.306 H 2.364 a 0.6 0.6 90 0 1 -0.528 -0.306 a 0.6 0.6 90 0 1 0 -0.6 l 4.8 -8.4 a 0.6 0.6 90 0 1 1.068 0 l 4.83 8.4 A 0.6 0.6 90 0 1 12.564 11.694 Z M 7.2 4.8 a 0.6 0.6 90 0 0 -0.6 0.6 v 2.4 a 0.6 0.6 90 0 0 1.2 0 V 5.4 A 0.6 0.6 90 0 0 7.2 4.8 Z",
+                    "title": "False Optional Feature",
+                    "cursor": "pointer",
+                    "display": "none"
+                },
+                "markerColorRect": {
+                    "refX": 12,
+                    "refY": 10,
+                    "fill": "#2b8b01",
+                    "stroke": "none",
+                    "r": 6,
+                    "title": "Marker color",
+                    "cursor": "pointer"
+                }
+            }
+        },
+        {
+            "type": "app.FeatureShapeModel",
+            "feature": {
                 "key": "d93d2a35-6aca-49c3-a354-1f259b665394",
                 "name": "Visa",
                 "type": "Functionality feature",
@@ -1758,7 +1912,7 @@
                     "selector": "markerColorRect"
                 }
             ],
-            "id": "dd87d8f6-2db3-4492-9f57-0ab906827f0d",
+            "id": "8af97cda-ace1-4701-93e4-0f71c6c282ef",
             "position": {
                 "x": 1415,
                 "y": 252
@@ -1912,7 +2066,7 @@
                     "selector": "markerColorRect"
                 }
             ],
-            "id": "c730c898-0aa4-468d-b665-dd6a3237c9bf",
+            "id": "8fb79f28-ed07-4522-ad4b-502acac1724b",
             "position": {
                 "x": 1645,
                 "y": 252
@@ -2066,10 +2220,10 @@
                     "selector": "markerColorRect"
                 }
             ],
-            "id": "9e6ed446-c21b-4f97-b97d-fe374dd0f9e8",
+            "id": "ef1245a5-c49e-41b5-8d67-7da6d6058a60",
             "position": {
                 "x": 1760,
-                "y": 150
+                "y": 151
             },
             "attrs": {
                 "body": {
@@ -2171,7 +2325,7 @@
                         "rotate": true
                     }
                 },
-                "id": "0dcecd70-4aac-4555-8227-88adbbbd16cf"
+                "id": "4319ac2d-366b-4a80-9d37-3853410f6d6e"
             },
             "target": {
                 "connectionPoint": {
@@ -2191,11 +2345,11 @@
                         "rotate": true
                     }
                 },
-                "id": "a4516706-4b3d-4510-874b-42e835b83517"
+                "id": "5434b82e-4d6b-45b1-afd7-6a5930cb0b7b"
             },
             "z": 100,
             "type": "standard.Link",
-            "id": "4ff818c4-896f-464e-960a-08c43af4dc97",
+            "id": "668750c1-610a-4c57-b4db-fb301dc3c2fd",
             "attrs": {
                 "line": {
                     "stroke": "#b745bb",
@@ -2229,7 +2383,7 @@
                         "rotate": true
                     }
                 },
-                "id": "0dcecd70-4aac-4555-8227-88adbbbd16cf"
+                "id": "4319ac2d-366b-4a80-9d37-3853410f6d6e"
             },
             "target": {
                 "connectionPoint": {
@@ -2249,11 +2403,11 @@
                         "rotate": true
                     }
                 },
-                "id": "60c15f87-3024-4dcf-9d48-294343882cc1"
+                "id": "a2fa943f-49eb-4b39-a8b5-e6e5773c458a"
             },
             "z": 100,
             "type": "standard.Link",
-            "id": "469b6939-03ae-4580-b31d-b1f3f743c44f",
+            "id": "77c47f34-5aac-4dc6-b373-bb53ed749698",
             "attrs": {
                 "line": {
                     "stroke": "#b745bb",
@@ -2287,7 +2441,7 @@
                         "rotate": true
                     }
                 },
-                "id": "0dcecd70-4aac-4555-8227-88adbbbd16cf"
+                "id": "4319ac2d-366b-4a80-9d37-3853410f6d6e"
             },
             "target": {
                 "connectionPoint": {
@@ -2307,11 +2461,11 @@
                         "rotate": true
                     }
                 },
-                "id": "4aacf12b-8277-4e13-949a-5b50bf1279f1"
+                "id": "6f07ceed-bd94-42eb-9e07-de1e9c1c2362"
             },
             "z": 100,
             "type": "standard.Link",
-            "id": "f5605690-9f61-4b5e-b942-041a9181f7fe",
+            "id": "5e5dcf4d-c489-45f3-9de7-2d043aa09c33",
             "attrs": {
                 "line": {
                     "stroke": "#b745bb",
@@ -2345,7 +2499,7 @@
                         "rotate": true
                     }
                 },
-                "id": "0dcecd70-4aac-4555-8227-88adbbbd16cf"
+                "id": "4319ac2d-366b-4a80-9d37-3853410f6d6e"
             },
             "target": {
                 "connectionPoint": {
@@ -2365,11 +2519,11 @@
                         "rotate": true
                     }
                 },
-                "id": "788c911b-0b5c-4b1f-a48b-3b3e9a5e49b0"
+                "id": "8d7ba588-624d-46c0-b684-d2bc020c30af"
             },
             "z": 100,
             "type": "standard.Link",
-            "id": "1595be25-b174-4423-9cec-6f12ec6c4951",
+            "id": "5ec1b96d-4143-42cf-ba15-ff274e29816d",
             "attrs": {
                 "line": {
                     "stroke": "#adc949",
@@ -2403,7 +2557,7 @@
                         "rotate": true
                     }
                 },
-                "id": "788c911b-0b5c-4b1f-a48b-3b3e9a5e49b0"
+                "id": "8d7ba588-624d-46c0-b684-d2bc020c30af"
             },
             "target": {
                 "connectionPoint": {
@@ -2423,11 +2577,11 @@
                         "rotate": true
                     }
                 },
-                "id": "0f837cee-67d7-4769-9c66-35c547cdd8a0"
+                "id": "58c9113c-9f35-4671-8b69-b707ee7aabfd"
             },
             "z": 100,
             "type": "standard.Link",
-            "id": "a5be9dbc-2e6a-44a9-8ca4-0439eec92ba9",
+            "id": "dbd03e6d-5ad6-45fd-a988-1f734917149c",
             "attrs": {
                 "line": {
                     "stroke": "#adc949",
@@ -2461,7 +2615,7 @@
                         "rotate": true
                     }
                 },
-                "id": "788c911b-0b5c-4b1f-a48b-3b3e9a5e49b0"
+                "id": "8d7ba588-624d-46c0-b684-d2bc020c30af"
             },
             "target": {
                 "connectionPoint": {
@@ -2481,11 +2635,11 @@
                         "rotate": true
                     }
                 },
-                "id": "cacdfdb7-9f24-49ba-88bc-7714774732d2"
+                "id": "48d9c3df-63cb-4432-93d9-de8e9281ac1c"
             },
             "z": 100,
             "type": "standard.Link",
-            "id": "7671ceff-4a1f-4bf7-9f6d-57732f009785",
+            "id": "95a42a80-69b9-496d-bae1-f21810dc1bb1",
             "attrs": {
                 "line": {
                     "stroke": "#adc949",
@@ -2519,7 +2673,7 @@
                         "rotate": true
                     }
                 },
-                "id": "788c911b-0b5c-4b1f-a48b-3b3e9a5e49b0"
+                "id": "8d7ba588-624d-46c0-b684-d2bc020c30af"
             },
             "target": {
                 "connectionPoint": {
@@ -2539,11 +2693,11 @@
                         "rotate": true
                     }
                 },
-                "id": "626b4c37-7ae5-4896-8450-3e2843a37e42"
+                "id": "dbde8f49-71bd-4f55-8422-2baaf83e5cac"
             },
             "z": 100,
             "type": "standard.Link",
-            "id": "4bbef32e-be32-42b7-a340-74cf292c8bda",
+            "id": "6fd2a662-9689-4ab1-bf9d-cf9bcb1b4223",
             "attrs": {
                 "line": {
                     "stroke": "#adc949",
@@ -2577,7 +2731,7 @@
                         "rotate": true
                     }
                 },
-                "id": "788c911b-0b5c-4b1f-a48b-3b3e9a5e49b0"
+                "id": "8d7ba588-624d-46c0-b684-d2bc020c30af"
             },
             "target": {
                 "connectionPoint": {
@@ -2597,11 +2751,11 @@
                         "rotate": true
                     }
                 },
-                "id": "53ec9b5a-7f58-4654-a8ae-856303753aa0"
+                "id": "10b15625-5f1d-4a01-b817-d64d2e64db60"
             },
             "z": 100,
             "type": "standard.Link",
-            "id": "3705721a-f0b7-4ef5-a72f-61e51982591c",
+            "id": "6540cc53-ad97-4945-8410-eff97e241f38",
             "attrs": {
                 "line": {
                     "stroke": "#adc949",
@@ -2635,7 +2789,7 @@
                         "rotate": true
                     }
                 },
-                "id": "0dcecd70-4aac-4555-8227-88adbbbd16cf"
+                "id": "4319ac2d-366b-4a80-9d37-3853410f6d6e"
             },
             "target": {
                 "connectionPoint": {
@@ -2655,11 +2809,11 @@
                         "rotate": true
                     }
                 },
-                "id": "0f651f91-0bf9-45b6-8cc6-7077d190bb4f"
+                "id": "b704561f-37ba-4dd1-b2c4-19187a431f8d"
             },
             "z": 100,
             "type": "standard.Link",
-            "id": "73849fd8-8cbe-43ad-ad3b-7f327f71eb63",
+            "id": "f56ae57f-a1ec-4a62-9e9a-7a58f385d7f4",
             "attrs": {
                 "line": {
                     "stroke": "#adc949",
@@ -2693,7 +2847,7 @@
                         "rotate": true
                     }
                 },
-                "id": "0dcecd70-4aac-4555-8227-88adbbbd16cf"
+                "id": "4319ac2d-366b-4a80-9d37-3853410f6d6e"
             },
             "target": {
                 "connectionPoint": {
@@ -2713,11 +2867,11 @@
                         "rotate": true
                     }
                 },
-                "id": "6599f7ac-923e-4704-8ffc-11a792cd52bf"
+                "id": "5d3d9e26-d8db-4fba-bce1-26ab48e63dcf"
             },
             "z": 100,
             "type": "standard.Link",
-            "id": "c6815d4b-a6ac-4cfc-a250-3304adc26227",
+            "id": "1c49bb8d-b6a4-4963-9fc7-dc5c4b801b89",
             "attrs": {
                 "line": {
                     "stroke": "#adc949",
@@ -2751,7 +2905,7 @@
                         "rotate": true
                     }
                 },
-                "id": "0dcecd70-4aac-4555-8227-88adbbbd16cf"
+                "id": "4319ac2d-366b-4a80-9d37-3853410f6d6e"
             },
             "target": {
                 "connectionPoint": {
@@ -2771,11 +2925,11 @@
                         "rotate": true
                     }
                 },
-                "id": "c9da1f24-caae-484c-a254-ffbf8c2ea6a7"
+                "id": "8e977295-6729-4fb2-9d00-1a518efe8d9e"
             },
             "z": 100,
             "type": "standard.Link",
-            "id": "ab5c0825-85c6-4e55-820f-878f8537b457",
+            "id": "1eeb94ea-1ccf-4c6b-b28c-c7485d72310e",
             "attrs": {
                 "line": {
                     "stroke": "#adc949",
@@ -2809,7 +2963,7 @@
                         "rotate": true
                     }
                 },
-                "id": "c9da1f24-caae-484c-a254-ffbf8c2ea6a7"
+                "id": "8e977295-6729-4fb2-9d00-1a518efe8d9e"
             },
             "target": {
                 "connectionPoint": {
@@ -2829,11 +2983,11 @@
                         "rotate": true
                     }
                 },
-                "id": "dd87d8f6-2db3-4492-9f57-0ab906827f0d"
+                "id": "8af97cda-ace1-4701-93e4-0f71c6c282ef"
             },
             "z": 100,
             "type": "standard.Link",
-            "id": "8bce3cf5-e5ff-4a81-b609-46306acf1ddf",
+            "id": "a7f0c32d-c51d-49cf-bfdf-8e9f1c6d6b4b",
             "attrs": {
                 "line": {
                     "stroke": "#adc949",
@@ -2867,7 +3021,7 @@
                         "rotate": true
                     }
                 },
-                "id": "c9da1f24-caae-484c-a254-ffbf8c2ea6a7"
+                "id": "8e977295-6729-4fb2-9d00-1a518efe8d9e"
             },
             "target": {
                 "connectionPoint": {
@@ -2887,11 +3041,11 @@
                         "rotate": true
                     }
                 },
-                "id": "c730c898-0aa4-468d-b665-dd6a3237c9bf"
+                "id": "8fb79f28-ed07-4522-ad4b-502acac1724b"
             },
             "z": 100,
             "type": "standard.Link",
-            "id": "77a835b5-d853-4284-abb3-d28d4659c157",
+            "id": "3092f4aa-bbdb-4b7c-bf9b-339c4849f01e",
             "attrs": {
                 "line": {
                     "stroke": "#adc949",
@@ -2925,7 +3079,7 @@
                         "rotate": true
                     }
                 },
-                "id": "0dcecd70-4aac-4555-8227-88adbbbd16cf"
+                "id": "4319ac2d-366b-4a80-9d37-3853410f6d6e"
             },
             "target": {
                 "connectionPoint": {
@@ -2945,11 +3099,69 @@
                         "rotate": true
                     }
                 },
-                "id": "9e6ed446-c21b-4f97-b97d-fe374dd0f9e8"
+                "id": "ef1245a5-c49e-41b5-8d67-7da6d6058a60"
             },
             "z": 100,
             "type": "standard.Link",
-            "id": "5cff1a1d-6679-433e-ad9f-291c3c4f1c8b",
+            "id": "cc5e535d-0cde-4bc6-a01c-f2cde6f2632a",
+            "attrs": {
+                "line": {
+                    "stroke": "#adc949",
+                    "strokeWidth": 1,
+                    "targetMarker": {
+                        "type": "circle",
+                        "r": 7,
+                        "cx": 7,
+                        "d": "M 10 -5 0 0 10 5 z",
+                        "fill": "white"
+                    },
+                    "connection": true,
+                    "strokeLinejoin": "round"
+                },
+                "wrapper": {
+                    "connection": true,
+                    "strokeWidth": 10,
+                    "strokeLinejoin": "round"
+                }
+            }
+        },
+        {
+            "source": {
+                "connectionPoint": {
+                    "name": "anchor",
+                    "args": {}
+                },
+                "anchor": {
+                    "name": "bottom",
+                    "args": {
+                        "rotate": true
+                    }
+                },
+                "id": "4319ac2d-366b-4a80-9d37-3853410f6d6e"
+            },
+            "target": {
+                "connectionPoint": {
+                    "name": "boundary",
+                    "args": {
+                        "offset": 0,
+                        "insideout": false,
+                        "extrapolate": true,
+                        "sticky": true,
+                        "precision": 3,
+                        "stroke": true
+                    }
+                },
+                "anchor": {
+                    "name": "top",
+                    "args": {
+                        "rotate": true
+                    }
+                },
+                "id": "7ffa0794-7cfc-45f7-86bf-03c09655470f"
+            },
+            "z": 100,
+            "type": "standard.Link",
+            "id": "6a896bd7-77c2-489f-b1b2-bcf02d1a13ea",
             "attrs": {
                 "line": {
                     "stroke": "#adc949",
@@ -2974,21 +3186,20 @@
         {
             "type": "app.FeatureShapeModel",
             "feature": {
-                "key": "00676151-77d9-45dd-bc14-56a82ea40a5f",
-                "name": "Consortium",
-                "nodeType": "feature",
+                "name": "New node",
+                "fullName": "New node",
+                "key": "b2459b48-cc93-4296-8bbf-af2e255c058f",
                 "type": "Functionality feature",
-                "parent": "c1c47565-382d-4698-b747-3d5c4972513f",
+                "hexColor": "#b577cb",
                 "parentRelation": "Normal",
                 "presence": "Optional",
+                "referenceType": "not a reference",
                 "lgFile": "",
                 "role": "",
-                "hexColor": "#2b8b01",
                 "help": "",
                 "nodeWeight": -1,
                 "isPropagated": false,
-                "filePath": "",
-                "referenceType": "not a reference"
+                "parent": "c1c47565-382d-4698-b747-3d5c4972513f"
             },
             "size": {
                 "width": 180,
@@ -3033,19 +3244,19 @@
                     "selector": "markerColorRect"
                 }
             ],
-            "id": "c9da1f24-caae-484c-a254-ffbf8c2ea6a7",
+            "id": "7ffa0794-7cfc-45f7-86bf-03c09655470f",
             "position": {
-                "x": 1530,
-                "y": 150
+                "x": 1990,
+                "y": 151
             },
             "z": 101,
             "attrs": {
                 "body": {
                     "refWidth": "100%",
                     "refHeight": "100%",
-                    "strokeWidth": 1,
+                    "strokeWidth": 2,
                     "fill": "#FFFFFF",
-                    "stroke": "#adc949",
+                    "stroke": "#FFCFC3",
                     "style": {
                         "transition": "0.3s ease-in-out"
                     },
@@ -3063,7 +3274,7 @@
                     "text": ""
                 },
                 "bodyText": {
-                    "text": "Consortium",
+                    "text": "New node",
                     "refX": "50%",
                     "refY": "50%",
                     "textWrap": {
@@ -3086,7 +3297,7 @@
                     "d": "M 0 0 l -10 10 q 10 10 20 0 z",
                     "height": 20,
                     "width": 30,
-                    "display": "block"
+                    "display": "none"
                 },
                 "deadFeature": {
                     "refX": "68%",
@@ -3119,7 +3330,7 @@
                 "markerColorRect": {
                     "refX": 12,
                     "refY": 10,
-                    "fill": "#2b8b01",
+                    "fill": "#b577cb",
                     "stroke": "none",
                     "r": 6,
                     "title": "Marker color",

@@ -88,4 +88,12 @@ public class ViewController {
         }
         return "redirect:/users";
     }
+
+    @PostMapping("/transfer")
+    public String Transfer(Account a){
+        service.transfer(a);
+        return "redirect:/index";
+    }
 }
+
+

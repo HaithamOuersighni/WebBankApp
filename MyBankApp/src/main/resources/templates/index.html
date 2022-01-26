@@ -67,6 +67,22 @@
     </div>
     <!-- Column that contains the Account box-->
   </div>
+  <!-- Column that contains the transfer box-->
+  <div class="columns transfer">
+    <form class="form-transfer" action="/transfer" method="post" th:object="${account}">
+      <div class="dest-div">
+        <label for="dest">Enter the recipient's account number</label>
+        <input id="dest" class="dest form-control" name="idUser" type="number">
+      </div>
+      <div class="amount-div">
+        <label for="amount">Enter the amount of transfer</label>
+        <input id="amount" class="amount form-control" name="value" type="number">
+      </div>
+      <div class="text-center">
+          <button type="new_user_btn submit" class="btn primary-color m-2">Submit</button>
+      </div>
+    </form>
+  </div>
 
   <!-- The buttons -->
   <div class="columns">

@@ -43,11 +43,11 @@
                     "featureKey": "32cc264a-0764-4d63-8499-f9b5d9b158c9",
                     "ranges": [
                         {
-                            "propagationId": "13465b52-a49d-4f7d-b1fd-637266e60d8c",
-                            "sourceId": "13465b52-a49d-4f7d-b1fd-637266e60d8c",
-                            "startLine": 109,
-                            "startColumn": 0,
-                            "endLine": 113,
+                            "propagationId": "ca08c6bd-feb8-493f-9be7-6dcdd30f0c37",
+                            "sourceId": "ca08c6bd-feb8-493f-9be7-6dcdd30f0c37",
+                            "startLine": 125,
+                            "startColumn": 8,
+                            "endLine": 129,
                             "endColumn": 14,
                             "isValidated": true,
                             "analyzer": "Interoperable analyzer",
@@ -61,12 +61,30 @@
                     "featureKey": "d93d2a35-6aca-49c3-a354-1f259b665394",
                     "ranges": [
                         {
-                            "propagationId": "5b1d913d-728c-4f85-b502-b3131d457ec0",
-                            "sourceId": "5b1d913d-728c-4f85-b502-b3131d457ec0",
-                            "startLine": 114,
-                            "startColumn": 0,
-                            "endLine": 118,
+                            "propagationId": "ae8604e3-437e-4fd0-9e64-1da41498d0c9",
+                            "sourceId": "ae8604e3-437e-4fd0-9e64-1da41498d0c9",
+                            "startLine": 130,
+                            "startColumn": 8,
+                            "endLine": 134,
                             "endColumn": 14,
+                            "isValidated": true,
+                            "analyzer": "Interoperable analyzer",
+                            "isFromMarker": true,
+                            "parent": "-1",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "featureKey": "b2459b48-cc93-4296-8bbf-af2e255c058f",
+                    "ranges": [
+                        {
+                            "propagationId": "dcb228e0-66ff-49f2-ab66-dec409cecf77",
+                            "sourceId": "dcb228e0-66ff-49f2-ab66-dec409cecf77",
+                            "startLine": 70,
+                            "startColumn": 2,
+                            "endLine": 84,
+                            "endColumn": 8,
                             "isValidated": true,
                             "analyzer": "Interoperable analyzer",
                             "isFromMarker": true,
@@ -193,18 +211,31 @@
                             "isFromMarker": true,
                             "parent": "-1",
                             "children": []
-                        }
-                    ]
-                },
-                {
-                    "featureKey": "5ff4cf5e-3111-4ae0-89f1-4c92d456f921",
-                    "ranges": [
+                        },
                         {
                             "propagationId": "f19761d3-7f4b-4a30-a5de-8e95d752ae7a",
                             "sourceId": "f19761d3-7f4b-4a30-a5de-8e95d752ae7a",
                             "startLine": 40,
                             "startColumn": 4,
                             "endLine": 58,
+                            "endColumn": 5,
+                            "isValidated": true,
+                            "analyzer": "Interoperable analyzer",
+                            "isFromMarker": true,
+                            "parent": "-1",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "featureKey": "b2459b48-cc93-4296-8bbf-af2e255c058f",
+                    "ranges": [
+                        {
+                            "propagationId": "d9f8f64c-6425-4377-b746-a6cc4b0a9968",
+                            "sourceId": "d9f8f64c-6425-4377-b746-a6cc4b0a9968",
+                            "startLine": 91,
+                            "startColumn": 4,
+                            "endLine": 95,
                             "endColumn": 5,
                             "isValidated": true,
                             "analyzer": "Interoperable analyzer",
@@ -329,9 +360,9 @@
                         {
                             "propagationId": "627e560d-fc13-4552-99d4-283737d45ecb",
                             "sourceId": "627e560d-fc13-4552-99d4-283737d45ecb",
-                            "startLine": 159,
+                            "startLine": 161,
                             "startColumn": 0,
-                            "endLine": 160,
+                            "endLine": 162,
                             "endColumn": 21,
                             "isValidated": true,
                             "analyzer": "Interoperable analyzer",
@@ -342,9 +373,9 @@
                         {
                             "propagationId": "b99ca63e-8a18-48d9-9a41-f6c2c67c9416",
                             "sourceId": "b99ca63e-8a18-48d9-9a41-f6c2c67c9416",
-                            "startLine": 154,
+                            "startLine": 156,
                             "startColumn": 0,
-                            "endLine": 154,
+                            "endLine": 156,
                             "endColumn": 56,
                             "isValidated": true,
                             "analyzer": "Interoperable analyzer",
@@ -372,6 +403,24 @@
                                 "ab336b75-93f4-44b0-8dba-82f8e60bcba5",
                                 "04afa35c-288f-4c8e-92b9-9bc3dad0e57f"
                             ]
+                        }
+                    ]
+                },
+                {
+                    "featureKey": "b2459b48-cc93-4296-8bbf-af2e255c058f",
+                    "ranges": [
+                        {
+                            "propagationId": "8b03b5dd-5514-42b2-8396-a605114cd5f8",
+                            "sourceId": "8b03b5dd-5514-42b2-8396-a605114cd5f8",
+                            "startLine": 165,
+                            "startColumn": 4,
+                            "endLine": 178,
+                            "endColumn": 5,
+                            "isValidated": true,
+                            "analyzer": "Interoperable analyzer",
+                            "isFromMarker": true,
+                            "parent": "-1",
+                            "children": []
                         }
                     ]
                 }
@@ -581,49 +630,8 @@
             ]
         },
         {
-            "file": "src/main/resources/static/scripts/main.js",
-            "propagations": [
-                {
-                    "featureKey": "eca4e1fa-ad94-481e-87fd-263f8d11b761",
-                    "ranges": [
-                        {
-                            "propagationId": "d45ab6a3-8ce7-47a5-b9a6-85f925fe0e05",
-                            "sourceId": "d45ab6a3-8ce7-47a5-b9a6-85f925fe0e05",
-                            "startLine": 8,
-                            "startColumn": 12,
-                            "endLine": 10,
-                            "endColumn": 13,
-                            "isValidated": true,
-                            "analyzer": "Interoperable analyzer",
-                            "isFromMarker": true,
-                            "parent": "-1",
-                            "children": []
-                        }
-                    ]
-                }
-            ]
-        },
-        {
             "file": "src/main/resources/static/scripts/login.js",
             "propagations": [
-                {
-                    "featureKey": "eca4e1fa-ad94-481e-87fd-263f8d11b761",
-                    "ranges": [
-                        {
-                            "propagationId": "b917495e-b897-4455-a143-bec350cf9c59",
-                            "sourceId": "b917495e-b897-4455-a143-bec350cf9c59",
-                            "startLine": 32,
-                            "startColumn": 4,
-                            "endLine": 37,
-                            "endColumn": 28,
-                            "isValidated": true,
-                            "analyzer": "Interoperable analyzer",
-                            "isFromMarker": true,
-                            "parent": "-1",
-                            "children": []
-                        }
-                    ]
-                },
                 {
                     "featureKey": "f369435f-0339-4df0-956e-884c7fddeecb",
                     "ranges": [
@@ -639,8 +647,26 @@
                             "isFromMarker": true,
                             "parent": "-1",
                             "children": [
-                                "b917495e-b897-4455-a143-bec350cf9c59"
+                                "c3eb77a8-5bc7-4dfd-bed6-6f052d7fd378"
                             ]
+                        }
+                    ]
+                },
+                {
+                    "featureKey": "eca4e1fa-ad94-481e-87fd-263f8d11b761",
+                    "ranges": [
+                        {
+                            "propagationId": "c3eb77a8-5bc7-4dfd-bed6-6f052d7fd378",
+                            "sourceId": "c3eb77a8-5bc7-4dfd-bed6-6f052d7fd378",
+                            "startLine": 37,
+                            "startColumn": 0,
+                            "endLine": 42,
+                            "endColumn": 28,
+                            "isValidated": true,
+                            "analyzer": "Interoperable analyzer",
+                            "isFromMarker": true,
+                            "parent": "-1",
+                            "children": []
                         }
                     ]
                 }
@@ -736,6 +762,52 @@
                             "startColumn": 12,
                             "endLine": 41,
                             "endColumn": 18,
+                            "isValidated": true,
+                            "analyzer": "Interoperable analyzer",
+                            "isFromMarker": true,
+                            "parent": "-1",
+                            "children": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "file": "src/main/resources/static/styles/default.css",
+            "propagations": [
+                {
+                    "featureKey": "b2459b48-cc93-4296-8bbf-af2e255c058f",
+                    "ranges": [
+                        {
+                            "propagationId": "41e0235f-5f37-4947-8f6e-24c9c04a7658",
+                            "sourceId": "41e0235f-5f37-4947-8f6e-24c9c04a7658",
+                            "startLine": 70,
+                            "startColumn": 0,
+                            "endLine": 79,
+                            "endColumn": 1,
+                            "isValidated": true,
+                            "analyzer": "Interoperable analyzer",
+                            "isFromMarker": true,
+                            "parent": "-1",
+                            "children": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "file": "src/main/resources/static/scripts/main.js",
+            "propagations": [
+                {
+                    "featureKey": "eca4e1fa-ad94-481e-87fd-263f8d11b761",
+                    "ranges": [
+                        {
+                            "propagationId": "dc38e567-c738-4453-adb4-491c176a4484",
+                            "sourceId": "dc38e567-c738-4453-adb4-491c176a4484",
+                            "startLine": 8,
+                            "startColumn": 12,
+                            "endLine": 10,
+                            "endColumn": 13,
                             "isValidated": true,
                             "analyzer": "Interoperable analyzer",
                             "isFromMarker": true,

@@ -155,6 +155,19 @@
             "hexColor": "#c56b65",
             "help": "",
             "nodeWeight": -1
+        },
+        {
+            "key": "b2459b48-cc93-4296-8bbf-af2e255c058f",
+            "name": "Transfer",
+            "type": "Functionality feature",
+            "parent": "c1c47565-382d-4698-b747-3d5c4972513f",
+            "parentRelation": "Normal",
+            "presence": "Optional",
+            "lgFile": "",
+            "role": "",
+            "hexColor": "#b577cb",
+            "help": "",
+            "nodeWeight": -1
         }
     ],
     "fileResources": [
